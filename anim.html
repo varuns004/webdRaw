@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        .container{
+            width: vw;
+            height: 600px;
+            color: beige;
+            border: 2px solid black;
+        }
+        .box1{
+            width: 200px;
+            height: 80px;
+            margin: 5px;
+            padding: 5px;
+            position: relative;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-color:rgb(123, 49, 49);
+            animation-name: movesbs;
+            animation-duration: 7s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+           
+        }
+        @keyframes movesbs{
+            from{background-color:rgb(123, 49, 49); 
+            left:0px; top:0px;}
+            to{background-color: aqua;
+            left:1000px; top:0px; }
+    
+        }
+
+        .box2{
+            width: 200px;
+            height: 80px;
+            margin: 5px;
+            padding: 5px;
+            position: relative;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-color:rgb(46, 35, 84);
+            animation-name: movetbs;
+            animation-duration: 7s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: linear;
+        
+        }
+
+        @keyframes movetbs{
+            from{background-color:rgb(46, 35, 84); 
+            left:0px; top:300px;}
+            to{background-color: aqua;
+            left:1000px; top:300px; }
+    
+        }
+
+
+        .curl{
+            width: 80px;
+            height: 80px;
+            margin: 5px;
+            padding: 5px;
+            position: relative;
+            border: 2px solid black;
+            border-radius: 200px;
+            background-color:rgb(46, 35, 84);
+            animation-name: movecbs;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: linear;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes movecbs{
+            from{background-color:rgb(24, 71, 22); 
+            left:500px; top:0px;}
+            to{background-color: aqua;
+            left:500px; top:300px; }
+    
+        }
+        .imja{
+            position:relative;
+            border: 2px solid;
+            border-radius: 1000px;
+        }
+
+
+
+    </Style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"> </div>
+        <div class="curl"><img class="imja" src="profile.jpg" alt="prof" width="60px" height="60px"></div>
+        <div class="box2"></div>
+    </div>
+
+</body>
+</html>
